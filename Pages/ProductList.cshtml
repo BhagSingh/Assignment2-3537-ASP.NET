@@ -1,0 +1,29 @@
+﻿@page
+@model Assignment2_3534.Pages.ProductListModel
+@{
+    int num1 = 10;
+    int num2 = 20;
+    int result = num1 + num2;
+
+}
+
+<h1>Product List </h1>
+<div class="="row"">
+
+    @{
+        foreach (var product in Model.Products)
+        {
+             <div class="card-body">
+             <h4 class="card-title">@product.Title</h4>
+            </div>
+
+
+            <div  class="card-img" style=" background-image: url('@product.Image')">
+           
+            </div>
+
+
+             
+        }
+    }
+</div>
